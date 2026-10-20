@@ -44,4 +44,4 @@ python -m pytest -q
 
 这些 CPU 单元测试检查计算、解析及路由逻辑，不代表运行了大型模型。独立推理的实际成功记录、数值及运行环境见[本仓库独立推理验收记录](docs/INFERENCE_QUICKSTART_CN.md)。**本版输出相机参数，不包含在线网页或多视角图片生成程序。**
 
-这个精简下载包经过明确的文件白名单打包；历史 Notebook、实验原始预测、用户照片、缓存、个人路径与第三方模型权重均不随包分发。包内 `MANIFEST_SHA256.txt` 记录源文件摘要。请遵守本项目 `LICENSE` 与 `THIRD_PARTY_NOTICES.md` 的各自许可范围：上游 Puffin 的 S-Lab License 1.0 涉及非商业使用及版权声明，任何第三方模型或适配器的再分发均须单独确认权限。Release 已发布为 Pre-release，当前可公开访问。独立科研仓库 `TSRG` 也为 Public，但并非本推理包的一部分，其发布内容须单独审核。
+这个精简下载包经过明确的文件白名单打包；历史 Notebook、实验原始预测、用户照片、缓存、个人路径与第三方模型权重均不随包分发。包内 `MANIFEST_SHA256.txt` 记录源文件摘要。请遵守本项目 `LICENSE` 与 `THIRD_PARTY_NOTICES.md` 的各自许可范围：上游 Puffin 的 S-Lab License 1.0 涉及非商业使用及版权声明，任何第三方模型或适配器的再分发均须单独确认权限。Release 已发布为 Pre-release，当前可公开访问。独立科研仓库 `TSRG` 的访问权限与发布内容单独管理，不属于本推理包。
