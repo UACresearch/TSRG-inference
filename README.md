@@ -12,7 +12,7 @@
 
 ## 如何下载、安装和运行
 
-请从 [保姆级中文使用说明](DOWNLOAD_README_CN.md) 开始；需要完整的服务器部署命令及文件夹示意，可直接查看 [两块 GPU 部署教程](docs/DEPLOY_CN.md)。准备两块 CUDA GPU，以及从官方获得的 Puffin 源码和基础模型 `Puffin-Base.pth`；另需从 [v0.1.0-rc1 Release](https://github.com/caolitong0717/TSRG-inference/releases/tag/v0.1.0-rc1) 单独下载 R19 Epoch-3 LoRA 适配器（程序检查 SHA256）。GPU 版 PyTorch 应按设备驱动单独安装，随后安装本仓库 `requirements-inference.txt`。已验证版本为 PyTorch 2.10.0、Transformers 5.0.0、PEFT 0.19.1。
+请从 [保姆级中文使用说明](DOWNLOAD_README_CN.md) 开始；需要完整的服务器部署命令及文件夹示意，可直接查看 [两块 GPU 部署教程](docs/DEPLOY_CN.md)。准备两块 CUDA GPU，以及从官方获得的 Puffin 源码和基础模型 `Puffin-Base.pth`；另需从 [v0.1.0-rc1 Release](https://github.com/UACresearch/TSRG-inference/releases/tag/v0.1.0-rc1) 单独下载 R19 Epoch-3 LoRA 适配器（程序检查 SHA256）。GPU 版 PyTorch 应按设备驱动单独安装，随后安装本仓库 `requirements-inference.txt`。已验证版本为 PyTorch 2.10.0、Transformers 5.0.0、PEFT 0.19.1。
 
 在本仓库根目录运行命令（下列路径是示例，需根据实际文件位置修改）：
 
@@ -40,6 +40,6 @@ python tools/build_download_zip.py
 
 最后一项生成 `dist/TSRG-inference-v0.1.0-rc1.zip`，内部附有 `MANIFEST_SHA256.txt` 校验单。GitHub Actions 也会自动构建供有权限成员下载的工作流 Artifact。精简包包含代码、说明、依赖和测试，不携带原始第三方模型、R19 权重、训练数据及旅游图片。
 
-**R19 权重独立下载**：[Release v0.1.0-rc1](https://github.com/caolitong0717/TSRG-inference/releases/tag/v0.1.0-rc1) · [模型 ZIP](https://github.com/caolitong0717/TSRG-inference/releases/download/v0.1.0-rc1/TSRG-R19-Epoch3-LoRA-v0.1.0-rc1.zip)，SHA256 `5c277a6a467f0d3e4f8befd53821247aa6c7691ce56e31ed1ecef8964e3ab076`。发布仍属于研究用候选版，用户须另从 Puffin 官方获得基础模型并遵守其非商业及署名条件。本仓库代码采用 LICENSE 中限定范围的 MIT 条款，不覆盖 R19 或上游模型；原始科研仓库、训练图片与历史档案继续 Private。
+**R19 权重独立下载**：[Release v0.1.0-rc1](https://github.com/UACresearch/TSRG-inference/releases/tag/v0.1.0-rc1) · [模型 ZIP](https://github.com/UACresearch/TSRG-inference/releases/download/v0.1.0-rc1/TSRG-R19-Epoch3-LoRA-v0.1.0-rc1.zip)，SHA256 `5c277a6a467f0d3e4f8befd53821247aa6c7691ce56e31ed1ecef8964e3ab076`。发布仍属于研究用候选版，用户须另从 Puffin 官方获得基础模型并遵守其非商业及署名条件。本仓库代码采用 LICENSE 中限定范围的 MIT 条款，不覆盖 R19 或上游模型；原始科研仓库、训练图片与历史档案继续 Private。
 
 相关说明：[GPU 验收记录](docs/INFERENCE_QUICKSTART_CN.md) · [R19 模型卡](docs/R19_MODEL_CARD_CN.md) · [公开授权审核记录](docs/PUBLIC_RELEASE_AUDIT_CN.md) · [公开前审核要求](docs/RELEASE_GATE_CN.md) · [第三方来源](THIRD_PARTY_NOTICES.md) · [独立代码许可](LICENSE)。
