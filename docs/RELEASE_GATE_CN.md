@@ -5,7 +5,7 @@
 ## 已完成的检查
 
 - 源码仓库当前文件及 27 次历史提交的文件名检查：历史提交涉及代码、测试、依赖、许可、使用说明和审计说明；未发现原始图片、训练数据或模型二进制被提交到源码历史。
-- 模型发布包已作为 [v0.1.0-rc1 Pre-release](https://github.com/caolitong0717/TSRG-inference/releases/tag/v0.1.0-rc1) 附件发布，名称为 `TSRG-R19-Epoch3-LoRA-v0.1.0-rc1.zip`，大小 8,020,529 bytes，GitHub 返回的 SHA256 与实际审核的包一致：`5c277a6a467f0d3e4f8befd53821247aa6c7691ce56e31ed1ecef8964e3ab076`。
+- 模型发布包已作为 [v0.1.0-rc1 Pre-release](https://github.com/UACresearch/TSRG-inference/releases/tag/v0.1.0-rc1) 附件发布，名称为 `TSRG-R19-Epoch3-LoRA-v0.1.0-rc1.zip`，大小 8,020,529 bytes，GitHub 返回的 SHA256 与实际审核的包一致：`5c277a6a467f0d3e4f8befd53821247aa6c7691ce56e31ed1ecef8964e3ab076`。
 - 包内原始 R19 Epoch-3 适配器未被修改，SHA256：`1dc8afa37c4947d30f58e9ae3aa260c76730dd7201a042f98fcbfd97ae0da8b0`。
 - 原数据集来源清单、归属清单、526 条主训练记录及 216 条辅助训练记录已完成元数据关联审核；该审核不代表逐张重新下载原图或提供法律意见。
 - 项目开发者已经明确同意公开其自有 TSRG 推理代码与 R19 LoRA。第三方基础模型仍由使用者从官方取得，遵守相应许可。项目源码的限定范围 MIT 许可不覆盖第三方模型或数据。
