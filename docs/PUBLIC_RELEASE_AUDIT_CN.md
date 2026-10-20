@@ -1,6 +1,6 @@
 # TSRG-inference 发布来源与审核记录
 
-本文件汇总公开使用版的已执行审查结果及其范围。原科研档案库 `TSRG` 不因本使用版发布而公开；训练照片、完整实验文件与原始测试明细均不属于公开包。
+本文件汇总公开使用版的已执行审查结果及其范围。科研档案库 `TSRG` 的共享权限单独管理；本推理使用包仍不包括训练照片、完整实验文件与原始测试明细。
 
 ## 开发者授权与第三方边界
 
@@ -14,10 +14,10 @@
 
 原始 R19 Epoch-3 LoRA `adapter_model.safetensors`：8,745,704 bytes，SHA256 `1dc8afa37c4947d30f58e9ae3aa260c76730dd7201a042f98fcbfd97ae0da8b0`，与原正式实验前冻结记录一致。原始 `adapter_config.json` 含历史 Kaggle 本地路径，该字段为来源元数据，不是外部部署必需的实际基础模型路径；最终发布包原样保存其字节。现有推理代码显式加载用户提供的 Puffin 基础模型对象，原始配置曾在双 T4 FP16 运行验证。
 
-[v0.1.0-rc1 Pre-release](https://github.com/caolitong0717/TSRG-inference/releases/tag/v0.1.0-rc1) 已附带 `TSRG-R19-Epoch3-LoRA-v0.1.0-rc1.zip`。GitHub 报告的文件大小为 8,020,529 bytes，SHA256 为 `5c277a6a467f0d3e4f8befd53821247aa6c7691ce56e31ed1ecef8964e3ab076`，与本地候选发布包一致。压缩包包含原始 LoRA 参数与配置、校验清单、发布说明和 Puffin 上游许可证；不含原始照片、基础权重、历史优化器和科研档案。
+[v0.1.0-rc1 Pre-release](https://github.com/UACresearch/TSRG-inference/releases/tag/v0.1.0-rc1) 已附带 `TSRG-R19-Epoch3-LoRA-v0.1.0-rc1.zip`。GitHub 报告的文件大小为 8,020,529 bytes，SHA256 为 `5c277a6a467f0d3e4f8befd53821247aa6c7691ce56e31ed1ecef8964e3ab076`，与本地候选发布包一致。压缩包包含原始 LoRA 参数与配置、校验清单、发布说明和 Puffin 上游许可证；不含原始照片、基础权重、历史优化器和科研档案。
 
 ## 推理验证范围与公开后复验
 
 现有独立命令行在 Kaggle 双 Tesla T4、FP16 上对新照片运行成功，GPU 验收与原 Notebook 同图结果一致；GitHub Actions 的 CPU 测试和确定性打包通过。这些软件验收不是新增精度报告，也未重新运行冻结的 R20 V3 BF16 test239。
 
-仓库由 Private 转 Public 后，仍需在未登录环境核验源码和 Release 的公开访问与下载，并建议由独立双 GPU 环境按文档复验。未证实单 GPU、纯 CPU 大模型推理或通用跨硬件可运行性。
+仓库当前为 Public，仍需在未登录环境核验源码和 Release 的公开访问与下载，并建议由独立双 GPU 环境按文档复验。未证实单 GPU、纯 CPU 大模型推理或通用跨硬件可运行性。
