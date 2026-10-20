@@ -14,7 +14,7 @@
 
 原始 R19 Epoch-3 LoRA `adapter_model.safetensors`：8,745,704 bytes，SHA256 `1dc8afa37c4947d30f58e9ae3aa260c76730dd7201a042f98fcbfd97ae0da8b0`，与原正式实验前冻结记录一致。原始 `adapter_config.json` 含历史 Kaggle 本地路径，该字段为来源元数据，不是外部部署必需的实际基础模型路径；最终发布包原样保存其字节。现有推理代码显式加载用户提供的 Puffin 基础模型对象，原始配置曾在双 T4 FP16 运行验证。
 
-[v0.1.0-rc1 Pre-release](https://github.com/caolitong0717/TSRG-inference/releases/tag/v0.1.0-rc1) 已附带 `TSRG-R19-Epoch3-LoRA-v0.1.0-rc1.zip`。GitHub 报告的文件大小为 8,020,529 bytes，SHA256 为 `5c277a6a467f0d3e4f8befd53821247aa6c7691ce56e31ed1ecef8964e3ab076`，与本地候选发布包一致。压缩包包含原始 LoRA 参数与配置、校验清单、发布说明和 Puffin 上游许可证；不含原始照片、基础权重、历史优化器和科研档案。
+[v0.1.0-rc1 Pre-release](https://github.com/UACresearch/TSRG-inference/releases/tag/v0.1.0-rc1) 已附带 `TSRG-R19-Epoch3-LoRA-v0.1.0-rc1.zip`。GitHub 报告的文件大小为 8,020,529 bytes，SHA256 为 `5c277a6a467f0d3e4f8befd53821247aa6c7691ce56e31ed1ecef8964e3ab076`，与本地候选发布包一致。压缩包包含原始 LoRA 参数与配置、校验清单、发布说明和 Puffin 上游许可证；不含原始照片、基础权重、历史优化器和科研档案。
 
 ## 推理验证范围与公开后复验
 
