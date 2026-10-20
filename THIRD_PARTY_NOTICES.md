@@ -1,6 +1,6 @@
 # 第三方来源与分发权限
 
-本独立代码仓库没有携带 Puffin 基础权重、上游源代码、R19 LoRA 二进制、GeoCalib 模型、原始照片或训练数据。R19 LoRA 通过 [v0.1.0-rc1 Release](https://github.com/caolitong0717/TSRG-inference/releases/tag/v0.1.0-rc1) **独立下载附件**提供，而非提交进源码仓库；各组件均保留原版权与授权边界。
+本独立代码仓库没有携带 Puffin 基础权重、上游源代码、R19 LoRA 二进制、GeoCalib 模型、原始照片或训练数据。R19 LoRA 通过 [v0.1.0-rc1 Release](https://github.com/UACresearch/TSRG-inference/releases/tag/v0.1.0-rc1) **独立下载附件**提供，而非提交进源码仓库；各组件均保留原版权与授权边界。
 
 - [Puffin 官方仓库](https://github.com/KangLiao929/Puffin) 使用 S-Lab License 1.0，涉及非商业用途、版权声明等条款；请核对[上游许可原文](https://github.com/KangLiao929/Puffin/blob/main/LICENSE)。TSRG 并非 Puffin 官方产品。
 - [Puffin 官方基础模型](https://huggingface.co/KangLiao/Puffin) 遵循原作者模型页及其 S-Lab 相关条件；[Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct) 模型卡标注 Apache-2.0；[NVIDIA C-RADIOv3-H](https://huggingface.co/nvidia/C-RADIOv3-H) 采用 NVIDIA Open Model License。这些许可互不替代，用户自行从官方获取相应资源。
