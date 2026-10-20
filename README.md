@@ -40,6 +40,6 @@ python tools/build_download_zip.py
 
 最后一项生成 `dist/TSRG-inference-v0.1.0-rc1.zip`，内部附有 `MANIFEST_SHA256.txt` 校验单。GitHub Actions 也会自动构建供有权限成员下载的工作流 Artifact。精简包包含代码、说明、依赖和测试，不携带原始第三方模型、R19 权重、训练数据及旅游图片。
 
-**R19 权重独立下载**：[Release v0.1.0-rc1](https://github.com/UACresearch/TSRG-inference/releases/tag/v0.1.0-rc1) · [模型 ZIP](https://github.com/UACresearch/TSRG-inference/releases/download/v0.1.0-rc1/TSRG-R19-Epoch3-LoRA-v0.1.0-rc1.zip)，SHA256 `5c277a6a467f0d3e4f8befd53821247aa6c7691ce56e31ed1ecef8964e3ab076`。发布仍属于研究用候选版，用户须另从 Puffin 官方获得基础模型并遵守其非商业及署名条件。本仓库代码采用 LICENSE 中限定范围的 MIT 条款，不覆盖 R19 或上游模型；独立科研仓库 `TSRG` 当前也为 Public，但原始旅游图片及完整训练数据不随本推理使用包发布；研究档案的公开范围需另行审核。
+**R19 权重独立下载**：[Release v0.1.0-rc1](https://github.com/UACresearch/TSRG-inference/releases/tag/v0.1.0-rc1) · [模型 ZIP](https://github.com/UACresearch/TSRG-inference/releases/download/v0.1.0-rc1/TSRG-R19-Epoch3-LoRA-v0.1.0-rc1.zip)，SHA256 `5c277a6a467f0d3e4f8befd53821247aa6c7691ce56e31ed1ecef8964e3ab076`。发布仍属于研究用候选版，用户须另从 Puffin 官方获得基础模型并遵守其非商业及署名条件。本仓库代码采用 LICENSE 中限定范围的 MIT 条款，不覆盖 R19 或上游模型；独立科研仓库 `TSRG` 的访问权限和发布范围另行管理；原始旅游图片及完整训练数据不随本推理使用包发布。
 
 相关说明：[GPU 验收记录](docs/INFERENCE_QUICKSTART_CN.md) · [R19 模型卡](docs/R19_MODEL_CARD_CN.md) · [公开授权审核记录](docs/PUBLIC_RELEASE_AUDIT_CN.md) · [发布范围与复验要求](docs/RELEASE_GATE_CN.md) · [第三方来源](THIRD_PARTY_NOTICES.md) · [独立代码许可](LICENSE)。
