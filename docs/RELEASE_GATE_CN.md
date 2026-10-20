@@ -1,11 +1,11 @@
 # TSRG 使用版与科研档案的发布边界
 
-本仓库 `TSRG-inference` 专门用于向研究者提供新照片相机参数预测的推理代码及部署说明。与之分开的原始科研仓库 `TSRG` 保留历史 R18/R19/R20 V3 Notebook、完整数据、原始图片、测试明细和审计材料；公开本使用仓库不会改变原始科研仓库的 Private 权限。
+本仓库 `TSRG-inference` 专门用于向研究者提供新照片相机参数预测的推理代码及部署说明。与之分开的原始科研仓库 `TSRG` 保留历史 R18/R19/R20 V3 Notebook、完整数据、原始图片、测试明细和审计材料；科研档案库 `TSRG` 当前也已公开，但其发布内容和授权范围须独立审核。
 
 ## 已完成的检查
 
 - 源码仓库当前文件及 27 次历史提交的文件名检查：历史提交涉及代码、测试、依赖、许可、使用说明和审计说明；未发现原始图片、训练数据或模型二进制被提交到源码历史。
-- 模型发布包已作为 [v0.1.0-rc1 Pre-release](https://github.com/caolitong0717/TSRG-inference/releases/tag/v0.1.0-rc1) 附件发布，名称为 `TSRG-R19-Epoch3-LoRA-v0.1.0-rc1.zip`，大小 8,020,529 bytes，GitHub 返回的 SHA256 与实际审核的包一致：`5c277a6a467f0d3e4f8befd53821247aa6c7691ce56e31ed1ecef8964e3ab076`。
+- 模型发布包已作为 [v0.1.0-rc1 Pre-release](https://github.com/UACresearch/TSRG-inference/releases/tag/v0.1.0-rc1) 附件发布，名称为 `TSRG-R19-Epoch3-LoRA-v0.1.0-rc1.zip`，大小 8,020,529 bytes，GitHub 返回的 SHA256 与实际审核的包一致：`5c277a6a467f0d3e4f8befd53821247aa6c7691ce56e31ed1ecef8964e3ab076`。
 - 包内原始 R19 Epoch-3 适配器未被修改，SHA256：`1dc8afa37c4947d30f58e9ae3aa260c76730dd7201a042f98fcbfd97ae0da8b0`。
 - 原数据集来源清单、归属清单、526 条主训练记录及 216 条辅助训练记录已完成元数据关联审核；该审核不代表逐张重新下载原图或提供法律意见。
 - 项目开发者已经明确同意公开其自有 TSRG 推理代码与 R19 LoRA。第三方基础模型仍由使用者从官方取得，遵守相应许可。项目源码的限定范围 MIT 许可不覆盖第三方模型或数据。
@@ -13,8 +13,8 @@
 
 ## 发布范围和已知限制
 
-公开后其他人可从本仓库取得源码、R19 LoRA 独立 Release 附件及使用教程；Puffin 基础模型不在本仓库分发。适用条件为非商业研究用途及相关上游许可。当前没有网页版、自动景点分类、多视角图片生成，也未验证单 GPU 和普通笔记本上的大型模型部署。
+目前其他人可从本仓库取得源码、R19 LoRA 独立 Release 附件及使用教程；Puffin 基础模型不在本仓库分发。适用条件为非商业研究用途及相关上游许可。当前没有网页版、自动景点分类、多视角图片生成，也未验证单 GPU 和普通笔记本上的大型模型部署。
 
-仓库转换为 Public 后，建议从未登录的浏览器核验首页、Release 及 ZIP 下载，再由具有双 CUDA GPU 的独立环境按 [部署教程](DEPLOY_CN.md) 进行端到端复验。原科研档案仓库须继续保持 Private。
+仓库当前为 Public，建议从未登录的浏览器核验首页、Release 及 ZIP 下载，再由具有双 CUDA GPU 的独立环境按 [部署教程](DEPLOY_CN.md) 进行端到端复验。独立科研仓库 `TSRG` 目前为 Public；请单独核查其备份 Release、历史材料及分发许可。
 
 详情见 [R19 模型卡](R19_MODEL_CARD_CN.md)、[来源与权利记录](PUBLIC_RELEASE_AUDIT_CN.md)和仓库首页。
