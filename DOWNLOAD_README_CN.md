@@ -11,7 +11,7 @@
 1. 安装具有 **两块 CUDA GPU** 的 Python 环境；已验证配置为 PyTorch 2.10.0+cu128、Transformers 5.0.0、PEFT 0.19.1，T4 使用 FP16，支持原生 BF16 的显卡可使用 BF16。单 GPU 或纯 CPU 大型模型推理尚未测试。PyTorch 请按照 [官方安装页面](https://pytorch.org/get-started/locally/) 选择与 CUDA 驱动匹配的 GPU 版本。
 2. 在下载包根目录运行 `python -m pip install -r requirements-inference.txt`。安装开发测试依赖可使用 `python -m pip install -r requirements-dev.txt`。
 3. 下载[官方基础模型代码](https://github.com/KangLiao929/Puffin)，保留其仓库内部的 `Puffin/` 目录，其中包含 `src/models/radiov3/hf_model.py`。从[官方模型页面](https://huggingface.co/KangLiao/Puffin)单独获取 `Puffin-Base.pth`。
-4. 从 [本项目 v0.1.0-rc1 Release](https://github.com/caolitong0717/TSRG-inference/releases/tag/v0.1.0-rc1) 单独下载 [R19 Epoch-3 权重 ZIP](https://github.com/caolitong0717/TSRG-inference/releases/download/v0.1.0-rc1/TSRG-R19-Epoch3-LoRA-v0.1.0-rc1.zip)，校验 ZIP 的 SHA256 为 `5c277a6a467f0d3e4f8befd53821247aa6c7691ce56e31ed1ecef8964e3ab076`。将其中的 `epoch_3/qwen_lora/` 解压到项目根目录的 `models/r19/`；文件夹内应同时有 `adapter_config.json` 和 `adapter_model.safetensors`。本程序会自动检查适配器 SHA256。
+4. 从 [本项目 v0.1.0-rc1 Release](https://github.com/UACresearch/TSRG-inference/releases/tag/v0.1.0-rc1) 单独下载 [R19 Epoch-3 权重 ZIP](https://github.com/UACresearch/TSRG-inference/releases/download/v0.1.0-rc1/TSRG-R19-Epoch3-LoRA-v0.1.0-rc1.zip)，校验 ZIP 的 SHA256 为 `5c277a6a467f0d3e4f8befd53821247aa6c7691ce56e31ed1ecef8964e3ab076`。将其中的 `epoch_3/qwen_lora/` 解压到项目根目录的 `models/r19/`；文件夹内应同时有 `adapter_config.json` 和 `adapter_model.safetensors`。本程序会自动检查适配器 SHA256。
 
 已核定的 R19 适配器 SHA256：
 
